@@ -10,7 +10,7 @@ body {
 }
 
 .yourname {
-  width: 200px;
+  width: 250px;
 }
 
 h1,
@@ -26,18 +26,6 @@ h6 {
 body {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
-}
-
-.multipleChoiceOptions {
-  margin: auto;
-  border: 2px solid;
-}
-
-.multipleChoiceOptions ol {
-  -webkit-columns: 2;
-          columns: 2;
-  padding: 30px;
-  list-style-type: lower-alpha;
 }
 
 .cssPropery {
@@ -58,7 +46,6 @@ input {
   color: black;
   outline: none;
   text-align: center;
-  width: 160px;
   background: #fff;
   font-family: 'Oswald', sans-serif;
   font-size: 1em;
@@ -85,15 +72,30 @@ main form .fillinblank ol li {
 }
 
 main .multipleChoice .multipleChoiceOptions {
-  max-width: 400px;
-  padding-left: 20px;
+  margin: auto;
+  padding: 10px 0 10px 50px;
 }
 
 main .multipleChoice .multipleChoiceOptions ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 10px;
+}
+
+main .multipleChoice .multipleChoiceOptions ul li {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+main .multipleChoice .multipleChoiceOptions ul li p {
+  display: inline-block;
+  padding: 1px 6px;
 }
 
 main .multipleChoice .multipleChoiceQuestions {
@@ -102,14 +104,41 @@ main .multipleChoice .multipleChoiceQuestions {
 
 main .multipleChoice .multipleChoiceQuestions li {
   padding: 10px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
 }
 
 main .multipleChoice .multipleChoiceQuestions li div {
-  width: 150px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+main .multipleChoice .multipleChoiceQuestions li div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 205px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
 }
 
 main .questions div {
   padding-left: 20px;
+}
+
+main .questions div p {
+  padding: 10px;
 }
 
 main .questions div textarea {

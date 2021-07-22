@@ -10,7 +10,7 @@ body {
   color: $textLight;
 }
 .yourname {
-  width: 200px;
+  width: 250px;
 }
 h1,
 h2,
@@ -25,16 +25,6 @@ h6 {
 body {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
-}
-
-.multipleChoiceOptions {
-  margin: auto;
-  border: 2px solid;
-  ol {
-    columns: 2;
-    padding: 30px;
-    list-style-type: lower-alpha;
-  }
 }
 .cssPropery {
   color: $textCSSProperty;
@@ -51,7 +41,6 @@ input {
   color: $textInput;
   outline: none;
   text-align: center;
-  width: 160px;
   background: #fff;
   font-family: 'Oswald', sans-serif;
   font-size: 1em;
@@ -79,19 +68,44 @@ main {
   }
   .multipleChoice {
     .multipleChoiceOptions {
-      max-width: 400px;
-      padding-left: 20px;
+      margin: auto;
+      padding: 10px 0 10px 50px;
       ul {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
+        li {
+          background-color: rgba(0, 0, 0, 0.5);
+          border-radius: 20px;
+          display: inline-block;
+          text-align: center;
+          p {
+            display: inline-block;
+            padding: 1px 6px;
+          }
+        }
       }
     }
+
     .multipleChoiceQuestions {
       padding-left: 20px;
       li {
         padding: 10px;
+        grid-template-columns: 1fr 1fr;
         div {
-          width: 150px;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 205px;
+            height: 30px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            transform: translateY(5px);
+          }
         }
       }
     }
@@ -99,6 +113,9 @@ main {
   .questions {
     div {
       padding-left: 20px;
+      p {
+        padding: 10px;
+      }
       textarea {
         background-color: rgba(255, 255, 255, 0.9);
         font-family: 'Oswald', sans-serif;
