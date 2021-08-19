@@ -4,9 +4,9 @@
 }
 
 body {
-  font-size: 1.4em;
-  background-color: #381d3f;
-  color: #fff;
+  font-size: 1.2em;
+  background-color: #465362;
+  color: #f4fffd;
 }
 
 .yourname {
@@ -24,7 +24,7 @@ h6 {
 }
 
 body {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'lato', sans-serif;
   font-weight: 400;
 }
 
@@ -52,8 +52,24 @@ input {
   margin: 3px;
 }
 
+.long {
+  width: 400px;
+}
+
+.short {
+  width: 100px;
+}
+
 section {
   padding: 20px;
+}
+
+code {
+  font-size: 1.3em;
+  background-color: #0e243f;
+  padding: 3px;
+  border-radius: 5px;
+  color: #f9dc5c;
 }
 
 main {
@@ -111,8 +127,8 @@ main .multipleChoice .multipleChoiceQuestions li {
 main .multipleChoice .multipleChoiceQuestions li div {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 5fr 2fr;
+      grid-template-columns: 5fr 2fr;
 }
 
 main .multipleChoice .multipleChoiceQuestions li div div {
@@ -128,7 +144,7 @@ main .multipleChoice .multipleChoiceQuestions li div div {
   width: 205px;
   height: 30px;
   background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
+  border-radius: 20px;
   -webkit-transform: translateY(5px);
           transform: translateY(5px);
 }

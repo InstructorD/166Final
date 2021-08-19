@@ -5,7 +5,7 @@
   padding: 0;
 }
 body {
-  font-size: 1.4em;
+  font-size: 1.2em;
   background-color: $backgroundDark;
   color: $textLight;
 }
@@ -23,7 +23,7 @@ h6 {
 }
 
 body {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'lato', sans-serif;
   font-weight: 400;
 }
 .cssPropery {
@@ -46,11 +46,22 @@ input {
   font-size: 1em;
   margin: 3px;
 }
-
+.long {
+  width: 400px;
+}
+.short {
+  width: 100px;
+}
 section {
   padding: 20px;
 }
-
+code {
+  font-size: 1.3em;
+  background-color: $darkHighlight;
+  padding: 3px;
+  border-radius: 5px;
+  color: $textHighlight;
+}
 main {
   margin: auto;
   max-width: 900px;
@@ -95,7 +106,7 @@ main {
         grid-template-columns: 1fr 1fr;
         div {
           display: grid;
-          grid-template-columns: 1fr 1fr;
+          grid-template-columns: 5fr 2fr;
           div {
             display: flex;
             justify-content: center;
@@ -103,7 +114,7 @@ main {
             width: 205px;
             height: 30px;
             background-color: rgba(0, 0, 0, 0.5);
-            border-radius: 10px;
+            border-radius: 20px;
             transform: translateY(5px);
           }
         }
