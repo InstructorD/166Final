@@ -72,6 +72,10 @@ code {
   color: #f9dc5c;
 }
 
+.highlight {
+  color: #f9dc5c;
+}
+
 main {
   margin: auto;
   max-width: 900px;
