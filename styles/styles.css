@@ -92,6 +92,10 @@ code,
   height: 120px;
 }
 
+.xtall {
+  height: 166px;
+}
+
 main {
   margin: auto;
   margin-top: 10px;
@@ -183,6 +187,5 @@ main .questions div textarea {
   width: 100%;
   resize: none;
   border: none;
-  padding: 10px;
 }
 /*# sourceMappingURL=styles.css.map */

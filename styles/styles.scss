@@ -76,6 +76,9 @@ code,
 .tall {
   height: 120px;
 }
+.xtall {
+  height: 166px;
+}
 main {
   margin: auto;
   margin-top: 10px;
@@ -147,7 +150,6 @@ main {
         width: 100%;
         resize: none;
         border: none;
-        padding: 10px;
       }
     }
   }
